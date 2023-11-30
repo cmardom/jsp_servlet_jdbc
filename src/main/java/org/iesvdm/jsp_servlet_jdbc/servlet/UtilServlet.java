@@ -18,29 +18,15 @@ public class UtilServlet {
         int edad = -1;
         String localidad = null;
         try {
-
-            //UTILIZO LOS CONTRACTS DE LA CLASE Objects PARA LA VALIDACIÓN
-            //             v---- LANZA NullPointerException SI EL PARÁMETRO ES NULL
             Objects.requireNonNull(request.getParameter("nombre"));
-            //CONTRACT nonBlank..
-            //UTILIZO isBlank SOBRE EL PARÁMETRO DE TIPO String PARA CHEQUEAR QUE NO ES UN PARÁMETRO VACÍO "" NI CADENA TODO BLANCOS "    "
-            //          |                                EN EL CASO DE QUE SEA BLANCO LO RECIBIDO, LANZO UNA EXCEPCIÓN PARA INVALIDAR EL PROCESO DE VALIDACIÓN
-            //          -------------------------v                      v---------------------------------------|
+
             if (request.getParameter("nombre").isBlank()) throw new RuntimeException("Parámetro vacío o todo espacios blancos.");
             nombre = request.getParameter("nombre");
-
-
             estatura = Integer.parseInt(request.getParameter("estatura"));
-
             edad = Integer.parseInt(request.getParameter("edad"));
 
-            //UTILIZO LOS CONTRACTS DE LA CLASE Objects PARA LA VALIDACIÓN
-            //             v---- LANZA NullPointerException SI EL PARÁMETRO ES NULL
+
             Objects.requireNonNull(request.getParameter("localidad"));
-            //CONTRACT nonBlank
-            //UTILIZO isBlank SOBRE EL PARÁMETRO DE TIPO String PARA CHEQUEAR QUE NO ES UN PARÁMETRO VACÍO "" NI CADENA TODO BLANCOS "    "
-            //          |                                EN EL CASO DE QUE SEA BLANCO LO RECIBIDO, LANZO UNA EXCEPCIÓN PARA INVALIDAR EL PROCESO DE VALIDACIÓN
-            //          -------------------------v                      v---------------------------------------|
             if (request.getParameter("localidad").isBlank()) throw new RuntimeException("Parámetro vacío o todo espacios blancos.");
             localidad = request.getParameter("localidad");
 
@@ -53,4 +39,6 @@ public class UtilServlet {
         return Optional.empty();
 
     }
+
+
 }

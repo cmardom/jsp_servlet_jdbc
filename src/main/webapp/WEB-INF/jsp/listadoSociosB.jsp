@@ -59,7 +59,7 @@
                 <input type="hidden" name="codigo" value="<%=socio.getSocioId() %>"/>
                 <input class="btn btn-primary"  type="submit" value="Borrar">
             </form>
-            <form class="d-inline" method="get" action="EditarSociosSevlet">
+            <form class="d-inline" method="get" action="EditarSociosServlet">
                 <input type="hidden" name="codigo" value="<%=socio.getSocioId() %>"/>
                 <input class="btn btn-primary"  type="submit" value="Editar">
             </form>
