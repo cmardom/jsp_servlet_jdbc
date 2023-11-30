@@ -7,7 +7,7 @@ import java.util.Objects;
  */
 public class Socio {
 
-    private int socioId;
+    private int socioID;
     private String nombre;
     private int estatura;
     private int edad;
@@ -16,20 +16,20 @@ public class Socio {
     public Socio() {
     }
 
-    public Socio(int socioId, String nombre, int estatura, int edad, String localidad) {
-        this.socioId = socioId;
+    public Socio(int socioID, String nombre, int estatura, int edad, String localidad) {
+        this.socioID = socioID;
         this.nombre = nombre;
         this.estatura = estatura;
         this.edad = edad;
         this.localidad = localidad;
     }
 
-    public int getSocioId() {
-        return socioId;
+    public int getSocioID() {
+        return socioID;
     }
 
-    public void setSocioId(int socioId) {
-        this.socioId = socioId;
+    public void setSocioID(int socioID) {
+        this.socioID = socioID;
     }
 
     public String getNombre() {
@@ -69,18 +69,18 @@ public class Socio {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Socio socio = (Socio) o;
-        return socioId == socio.socioId;
+        return socioID == socio.socioID;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(socioId);
+        return Objects.hash(socioID);
     }
 
     @Override
     public String toString() {
         return "Socio{" +
-                "socioId=" + socioId +
+                "socioID=" + socioID +
                 ", nombre='" + nombre + '\'' +
                 ", estatura=" + estatura +
                 ", edad=" + edad +

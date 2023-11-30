@@ -42,8 +42,8 @@
     // FOR-EACH SOBRE LA COLECCIÓN DE listado DE SOCIO
     for (Socio socio: listado) {
     %>
-    <div id="<%=socio.getSocioId()%>" class="row mt-2 body">
-        <div class="col-md-1 align-self-center"><%=socio.getSocioId() %>
+    <div id="<%=socio.getSocioID()%>" class="row mt-2 body">
+        <div class="col-md-1 align-self-center"><%=socio.getSocioID() %>
         </div>
         <div class="col-md-4 align-self-center"><%=socio.getNombre() %>
         </div>
@@ -56,11 +56,11 @@
 
         <div class="col-md-2 align-self-center text-center">
             <form class="d-inline" method="post" action="BorrarSociosSevlet">
-                <input type="hidden" name="codigo" value="<%=socio.getSocioId() %>"/>
+                <input type="hidden" name="codigo" value="<%=socio.getSocioID() %>"/>
                 <input class="btn btn-primary"  type="submit" value="Borrar">
             </form>
             <form class="d-inline" method="get" action="EditarSociosServlet">
-                <input type="hidden" name="codigo" value="<%=socio.getSocioId() %>"/>
+                <input type="hidden" name="codigo" value="<%=socio.getSocioID() %>"/>
                 <input class="btn btn-primary"  type="submit" value="Editar">
             </form>
         </div>

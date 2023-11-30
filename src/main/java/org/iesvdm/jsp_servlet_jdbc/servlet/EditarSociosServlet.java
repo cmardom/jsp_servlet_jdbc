@@ -34,10 +34,18 @@ public class EditarSociosServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher dispatcher = null;
         System.out.println(request.getParameter("socioID"));
-        Optional<Socio> optionalSocio = UtilServlet.validaGrabar(request);
+        Optional<Socio> optionalSocio = UtilServlet.validarSocio(request);
         if (optionalSocio.isPresent()) {
             Socio socio = optionalSocio.get();
-            System.out.println(socio);
+            socioDAO.update(socio);
+
+            request.setAttribute("newSocioID", socio.getSocioID());
+            List<Socio> listado = this.socioDAO.getAll();
+            request.setAttribute("listado", listado);
+
+            dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/listadoSociosB.jsp");
         }
+
+        dispatcher.forward(request, response);
     }
 }

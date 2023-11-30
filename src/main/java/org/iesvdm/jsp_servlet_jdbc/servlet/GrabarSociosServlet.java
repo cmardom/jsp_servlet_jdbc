@@ -60,7 +60,7 @@ public class GrabarSociosServlet extends HttpServlet {
         // SI OK ==> OPTIONAL CON SOCIO                 |
         // SI FAIL ==> EMPTY OPTIONAL                   |
         //                                              V
-        Optional<Socio> optionalSocio = UtilServlet.validaGrabar(request);
+        Optional<Socio> optionalSocio = UtilServlet.validarSocio(request);
 
         //SI OPTIONAL CON SOCIO PRESENTE <--> VALIDA OK
         if (optionalSocio.isPresent()) {
@@ -85,7 +85,7 @@ public class GrabarSociosServlet extends HttpServlet {
 
             //ESTABLEZCO EL ATRIBUTO DE newSocioID EN EL ÁMBITO DE REQUEST
             //PARA LANZAR UN MODAL Y UN EFECTO SCROLL EN LA VISTA JSP
-            request.setAttribute("newSocioID", socio.getSocioId() );
+            request.setAttribute("newSocioID", socio.getSocioID() );
 
             //POR ÚLTIMO, REDIRECCIÓN INTERNA PARA LA URL /GrabarSocioServlet A pideNumeroSocio.jsp
             //                                                                      |

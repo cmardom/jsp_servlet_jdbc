@@ -37,7 +37,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
 
             rsGenKeys = ps.getGeneratedKeys();
             if (rsGenKeys.next())
-                socio.setSocioId(rsGenKeys.getInt(1));
+                socio.setSocioID(rsGenKeys.getInt(1));
 
         } catch (SQLException | ClassNotFoundException  e) {
             e.printStackTrace();
@@ -66,7 +66,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
             while (rs.next()) {
                 Socio socio = new Socio();
 
-                socio.setSocioId(rs.getInt("socioID"));
+                socio.setSocioID(rs.getInt("socioID"));
                 socio.setNombre(rs.getString("nombre"));
                 socio.setEstatura(rs.getInt("estatura"));
                 socio.setEdad(rs.getInt("edad"));
@@ -102,7 +102,7 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
             if (rs.next()) {
                 Socio socio = new Socio();
 
-                socio.setSocioId(rs.getInt("socioID"));
+                socio.setSocioID(rs.getInt("socioID"));
                 socio.setNombre(rs.getString("nombre"));
                 socio.setEstatura(rs.getInt("estatura"));
                 socio.setEdad(rs.getInt("edad"));
@@ -136,9 +136,8 @@ public class SocioDAOImpl extends AbstractDAOImpl implements SocioDAO {
             ps.setString(idx++, socio.getNombre());
             ps.setInt(idx++, socio.getEstatura());
             ps.setInt(idx++, socio.getEdad());
-            ps.setString(idx, socio.getLocalidad());
-
-            ps.setInt(idx++, socio.getSocioId());
+            ps.setString(idx++, socio.getLocalidad());
+            ps.setInt(idx++, socio.getSocioID());
 
             int rows = ps.executeUpdate();
 

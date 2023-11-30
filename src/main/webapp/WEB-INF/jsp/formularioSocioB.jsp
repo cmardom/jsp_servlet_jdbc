@@ -19,7 +19,7 @@
   if(socio != null){
     action = "EditarSociosServlet";
 %>
-      <div class="col-12 h2">Edite los datos del socio <%=socio.getSocioId()%></div>
+      <div class="col-12 h2">Edite los datos del socio <%=socio.getSocioID()%></div>
 <%
   } else {
     action = "GrabarSociosServlet";
@@ -37,11 +37,11 @@
     </div>
     <div class="row body mt-2">
       <div class="col-md-6 align-self-center">Estatura</div>
-      <div class="col-md-6 align-self-center"><input type="text" name="estatura" value="<%= socio != null ? socio.getEdad() : "" %>" /></div>
+      <div class="col-md-6 align-self-center"><input type="text" name="estatura" value="<%= socio != null ? socio.getEstatura() : "" %>" /></div>
     </div>
     <div class="row body mt-2">
       <div class="col-md-6 align-self-center">Edad</div>
-      <div class="col-md-6 align-self-center"><input type="text" name="edad" value="<%= socio != null ? socio.getEstatura() : "" %>" /></div>
+      <div class="col-md-6 align-self-center"><input type="text" name="edad" value="<%= socio != null ? socio.getEdad() : "" %>" /></div>
     </div>
     <div class="row body mt-2">
       <div class="col-md-6 align-self-center">Localidad</div>
@@ -58,7 +58,7 @@
     <%
       if(socio != null){
     %>
-    <input type="hidden" name="socioID" value="<%=socio.getSocioId()%>">
+    <input type="hidden" name="socioID" value="<%=socio.getSocioID()%>">
     <% } %>
   </form>
   <%
