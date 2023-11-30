@@ -10,10 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="Más dinamismos jquery">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/ListarSociosServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/grabaSocio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/grabaSocio.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSocios.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSocios.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +83,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/usuario/IdeaProjects/borrar/jsp_servlet_jdbc/src/main/webapp/WEB-INF/jsp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -98,6 +101,9 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "c6772c8b-6540-4209-826b-d2a24cd1ad52"
     ]
   }
 }]]></component>
@@ -116,7 +122,13 @@
       <recent name="org.iesvdm.jsp_servlet_jdbc.dao" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.12">
+    <configuration name="baloncesto_servlet.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/main/resources/baloncesto_servlet.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="c6772c8b-6540-4209-826b-d2a24cd1ad52" />
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 10.1.12" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.12" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="jsp_servlet_jdbc:war exploded">
@@ -173,6 +185,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.baloncesto_servlet.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -190,6 +207,7 @@
       <workItem from="1701107961237" duration="31000" />
       <workItem from="1701105202338" duration="8771000" />
       <workItem from="1701184849792" duration="4325000" />
+      <workItem from="1701336861882" duration="4520000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
