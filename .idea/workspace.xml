@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="Editar socio casi funcionando">
+    <list default="true" id="739e422a-ce2f-4c56-a118-8ca65f865cf4" name="Changes" comment="Editar socio funcionando">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/BorrarSociosServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/dao/SocioDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/dao/SocioDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/model/Socio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/model/Socio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/EditarSociosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/EditarSociosServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/GrabarSociosServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/GrabarSociosServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/UtilServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/jsp_servlet_jdbc/servlet/UtilServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/formularioSocioB.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/formularioSocioB.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listadoSociosB.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/estilos.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +207,9 @@
       <workItem from="1701184849792" duration="4325000" />
       <workItem from="1701336861882" duration="4580000" />
       <workItem from="1701345489909" duration="53000" />
-      <workItem from="1701362215845" duration="11976000" />
+      <workItem from="1701362215845" duration="12104000" />
+      <workItem from="1701374382323" duration="241000" />
+      <workItem from="1701415787318" duration="3490000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
@@ -357,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701371932488</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Editar socio funcionando">
+      <option name="closed" value="true" />
+      <created>1701374310018</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701374310018</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +388,8 @@
     <MESSAGE value="Más dinamismos jquery" />
     <MESSAGE value="sos" />
     <MESSAGE value="Editar socio casi funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Editar socio casi funcionando" />
+    <MESSAGE value="Editar socio funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editar socio funcionando" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -55,7 +55,7 @@
         </div>
 
         <div class="col-md-2 align-self-center text-center">
-            <form class="d-inline" method="post" action="BorrarSociosSevlet">
+            <form class="d-inline" method="post" action="BorrarSociosServlet">
                 <input type="hidden" name="codigo" value="<%=socio.getSocioID() %>"/>
                 <input class="btn btn-primary"  type="submit" value="Borrar">
             </form>
